@@ -50,6 +50,19 @@ export const userReducer = (state = initialState, action) => {
                 error: true
             }
 
+        case ACTIONS.USER_PROFILE_UPDATE:
+            return {
+                ...state,
+                user: action.user,
+                error: false
+            }
+
+        case ACTIONS.USER_PROFILE_UPDATE_ERROR:
+            return {
+                ...state,
+                error: true
+            }
+
         default: return state;
     }
 }
