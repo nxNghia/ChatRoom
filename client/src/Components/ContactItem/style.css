@@ -1,0 +1,20 @@
+.contact-item-container {
+  background: #555;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition: background 250ms, color 250ms;
+}
+
+.contact-item-container:hover {
+  background: #ccc;
+  color: #333;
+}
+
+.contact-basic-info {
+  padding-left: 20px;
+}
