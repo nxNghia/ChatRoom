@@ -25,16 +25,16 @@ export const fetchMessage = (messages = {}, curr_room_id) => {
     return dispatch => {
         dispatch({
             type: ACTIONS.MESSAGE_FETCH,
-            messages,
-            curr_room_id
+            messages
         })
     }
 }
 
-export const saveMessage = () => {
+export const saveMessage = (curr_room_id) => {
     return dispatch => {
         dispatch({
-            type: ACTIONS.MESSAGE_SAVE
+            type: ACTIONS.MESSAGE_SAVE,
+            curr_room_id
         })
     }
 }
