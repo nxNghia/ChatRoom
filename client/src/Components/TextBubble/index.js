@@ -11,7 +11,7 @@ import ThumbDownIcon from '@material-ui/icons/ThumbDown';
 
 import "./style.css";
 
-const TextBubble = ({self = false}) => {
+const TextBubble = ({self = false, message = {}}) => {
     const [enter, setEnter] = useState(false);
     const [remove, setRemove] = useState(false);
     const [showEmoji, setShowEmoji] = useState(false);
@@ -37,8 +37,7 @@ const TextBubble = ({self = false}) => {
     return (
         <Box className={ self ? 'bubble-area-self' : 'bubble-area' } onMouseEnter={() => setEnter(true)} onMouseLeave={mouseLeaveHandle} >
             <Typography className="text-bubble">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque hendrerit, est a dictum malesuada, 
-                est erat bibendum odio, nec fringilla orci orci id diam. Nunc volutpat ac velit quis consequat.
+                {message.content}
             </Typography>
             {enter && <Box className="text-control">
                 <Box className="emoji-container">

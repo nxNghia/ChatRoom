@@ -8,7 +8,7 @@ const ContactItem = ({ contactItem={} }) => {
             <Avatar>T</Avatar>
             <Box className="contact-basic-info">
                 <Typography variant="h6">{contactItem.name}</Typography>
-                <Typography variant="h7">New messages</Typography>
+                <Typography>New messages</Typography>
             </Box>
         </Box>
     )

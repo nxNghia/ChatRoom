@@ -1,6 +1,7 @@
 import { Box, IconButton, Modal, Typography, Backdrop, Fade } from "@material-ui/core";
 import EditIcon from '@material-ui/icons/Edit';
 import HelpIcon from '@material-ui/icons/Help';
+import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import { useState } from "react";
 import Information from "./Modals/infoModal";
 
@@ -26,6 +27,9 @@ const RoomController = () => {
                 </IconButton>
                 <IconButton onClick={modalClickHandle}>
                     <HelpIcon />
+                </IconButton>
+                <IconButton onClick={modalClickHandle}>
+                    <DeleteForeverIcon />
                 </IconButton>
             </Box>
             <Modal
