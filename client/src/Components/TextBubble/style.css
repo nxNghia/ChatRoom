@@ -1,0 +1,27 @@
+.bubble-area {
+  margin-top: 10px;
+  display: flex;
+}
+
+.bubble-area-self {
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.bubble-area-self > p {
+  background-color: #004ead;
+  color: #fff;
+}
+
+.bubble-area > p {
+  background-color: #ff6161;
+  color: #fff;
+}
+
+.text-bubble {
+  max-width: 60%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+}

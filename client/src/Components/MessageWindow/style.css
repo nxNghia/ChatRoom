@@ -4,3 +4,17 @@
   box-sizing: border-box;
   width: 100%;
 }
+
+.texts-container {
+  overflow: auto;
+  height: calc(100% - 130px);
+  padding: 10px;
+}
+
+.input-field {
+  padding: 5px;
+}
+
+.send-icon {
+  cursor: pointer;
+}
