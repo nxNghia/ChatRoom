@@ -1,12 +1,14 @@
 .bubble-area {
   margin-top: 10px;
   display: flex;
+  align-items: center;
 }
 
 .bubble-area-self {
   margin-top: 10px;
   display: flex;
-  justify-content: end;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .bubble-area-self > p {
@@ -24,4 +26,64 @@
   border-radius: 10px;
   box-sizing: border-box;
   padding: 5px;
+}
+
+.text-control {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.confirm-box {
+  background: #ffffff;
+  box-sizing: border-box;
+  padding-top: 10px;
+  width: 300px;
+  text-align: center;
+  height: 100px;
+  margin: auto;
+  margin-top: 15%;
+  border: 2px solid #000;
+}
+
+.control-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.emoji-container {
+  position: relative;
+}
+
+.text-control .MuiButtonBase-root {
+  transition: transform 250ms, color 250ms;
+}
+
+.text-control .MuiButtonBase-root:hover {
+  transform: scale(1.4);
+  color: rgb(45, 112, 255);
+}
+
+.emoji-list {
+  position: absolute;
+  width: 250%;
+  top: -30px;
+  left: -40px;
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid rgba(100, 240, 240);
+  border-radius: 10px;
+}
+
+.emoji-list > svg {
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+.emoji-list > svg:hover {
+  transform: scale(1.5, 1.5);
 }
