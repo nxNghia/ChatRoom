@@ -14,6 +14,7 @@ export const sendMessage = (message = '') => {
 
 export const receiveMessage = (messageInstance = {}) => {
     return dispatch => {
+        console.log('sent')
         dispatch({
             type: ACTIONS.MESSAGE_RECEIVE,
             new_message: messageInstance

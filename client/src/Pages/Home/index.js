@@ -5,6 +5,7 @@ import {
 import ContactList from "../../Components/ContactList";
 import MessageWindow from "../../Components/MessageWindow";
 import Topbar from "../../Components/Topbar";
+import UserList from "../../Components/UserList";
 
 import './style.css';
 
@@ -16,8 +17,11 @@ const Home = () => {
                 <Box className="left-panel">
                     <ContactList />
                 </Box>
-                <Box className="right-panel">
+                <Box className="center-panel">
                     <MessageWindow />
+                </Box>
+                <Box className="right-panel">
+                    <UserList />
                 </Box>
             </Box>
         </Container>

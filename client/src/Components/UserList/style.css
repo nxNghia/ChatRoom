@@ -1,0 +1,24 @@
+.users-container {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  height: calc(100% - 10px);
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-container > div {
+  width: 100%;
+}
+
+.search-field {
+  width: 100%;
+}
+
+.users-list-container {
+  overflow: auto;
+  height: calc(100% - 50px);
+  margin-top: 5px;
+}

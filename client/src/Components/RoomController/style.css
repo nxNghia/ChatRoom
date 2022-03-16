@@ -1,0 +1,19 @@
+.room-controller {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.modal-container {
+  background: #ffffff;
+  width: 40%;
+  height: 60%;
+  margin: auto;
+  margin-top: 170px;
+}

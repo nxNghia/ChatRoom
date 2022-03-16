@@ -1,7 +1,10 @@
 import { constances as ACTIONS } from "../Constances";
 
 const initialState = {
-
+    user: {
+        id: 1,
+        username: 'Nguyen Xuan Nghia'
+    }
 }
 
 export const userReducer = (state = initialState, action) => {

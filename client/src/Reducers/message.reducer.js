@@ -5,7 +5,7 @@ const initialState = {
     messages: []
 }
 
-export const messegeReducer = (state = initialState, action) => {
+export const messageReducer = (state = initialState, action) => {
     switch (action.type)
     {
         case ACTIONS.MESSAGE_SEND:

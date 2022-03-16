@@ -1,9 +1,11 @@
 import { combineReducers } from "redux";
 
 import { userReducer } from "./user.reducer";
-import { messegeReducer } from "./messege.reducer";
+import { messageReducer } from "./message.reducer";
+import { roomReducer } from "./room.reducer";
 
 export default combineReducers({
     userReducer,
-    messegeReducer
+    messageReducer,
+    roomReducer
 })
