@@ -3,12 +3,15 @@ import EditIcon from '@material-ui/icons/Edit';
 import HelpIcon from '@material-ui/icons/Help';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import { useState } from "react";
-import Information from "./Modals/infoModal";
+import { useSelector } from "react-redux";
 
+import { currRoomSelector } from "../../Selectors/room.selector";
+import Information from "./Modals/infoModal";
 import "./style.css";
 
 const RoomController = () => {
     const [showModal, setShowModal] = useState(false);
+    const curr_room = useSelector(currRoomSelector);
 
     const modalClickHandle = () => {
         setShowModal(!showModal);
@@ -19,7 +22,7 @@ const RoomController = () => {
     return (
         <Box className="room-controller">
             <Box className="room-title">
-                <Typography variant="h5">Title</Typography>
+                <Typography variant="h5">{curr_room.name}</Typography>
             </Box>
             <Box>
                 <IconButton onClick={modalClickHandle}>

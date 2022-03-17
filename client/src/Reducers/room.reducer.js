@@ -1,8 +1,12 @@
 import { constances as ACTIONS } from "../Constances";
 
 const initialState = {
-    rooms: [],
-    curr_room_id: undefined,
+    rooms: [
+        { id: 0, name: 'my room' },
+        { id: 1, name: 'another room' },
+        { id: 2, name: 'another another room' }
+    ],
+    curr_room: undefined,
     new_messages_rooms: [],
     error: false
 }
@@ -26,8 +30,8 @@ export const roomReducer = (state = initialState, action) => {
         case ACTIONS.ROOM_SWITCH:
             return {
                 ...state,
-                curr_room_id: action.curr_room_id,
-                new_messages_rooms: state.new_messages_rooms.filter(rooms => rooms.id !== action.curr_room_id)
+                curr_room: action.room,
+                new_messages_rooms: state.new_messages_rooms.filter(rooms => rooms.id !== action.room.id)
             }
 
         case ACTIONS.ROOM_NEW_MESSAGES:

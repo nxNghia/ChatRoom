@@ -33,6 +33,11 @@ export const fetchRooms = () => {
     }
 }
 
-export const switchRoom = (room_id) => {
-
+export const switchRoom = (room) => {
+    return dispatch => {
+        dispatch({
+            type: ACTIONS.ROOM_SWITCH,
+            room
+        })
+    }
 }
